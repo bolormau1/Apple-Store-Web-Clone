@@ -1,0 +1,90 @@
+.gradient-frame {
+  display: flex;
+  width: 1920px;
+  height: 75px;
+  background-image: url("../Images/gradient-frame.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 60px;
+}
+
+.store {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 100px; */
+  padding-right: 140px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 52.01px;
+  gap: 32px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title-desc {
+  color: rgba(110, 110, 115, 1);
+}
+
+
+.shopping-help {
+  display: flex;
+  justify-content: space-between;
+  width: 226px;
+  height: 100px;
+  gap: 16px;
+}
+
+.store-chat-specialist-profile {
+  width: 35px;
+  height: 35px;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  gap: 16px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  font: 14px;
+  line-height: 20px;
+  gap: 4px;
+}
+
+.chat-header {
+  font-weight: 600;
+  color: rgba(29, 29, 31, 1);
+}
+
+.chat-link {
+  font-weight: 300;
+  text-decoration: underline;
+  color: rgba(0, 102, 204, 1);
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 146px;
+  gap: 12px;
+  padding-right: 140px;
+}

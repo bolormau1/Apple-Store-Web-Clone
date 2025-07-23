@@ -1,0 +1,34 @@
+.product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 146px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 136px;
+  height: 146px;
+  padding: 16px 8px;
+  gap: 16x;
+}
+
+.product-img {
+  width: 120px;
+  height: 78px;
+}
+
+.product-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}

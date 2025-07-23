@@ -15,12 +15,23 @@ body {
 .full-frame {
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  width: 100%;
+  width: 1920px;
 
   align-items: flex-start;
   align-content: flex-start;
   align-self: stretch;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+  padding-left: 140px;
 }
