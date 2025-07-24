@@ -27,23 +27,15 @@
   scroll-snap-type: x mandatory;
 }
 
-/* SHELF - THE LATEST */
 .shelf-item {
   display: flex;
   flex-direction: column;
   align-items: start;
   min-width: 313px;
   height: 500px;
-  padding: 30px;
+  padding: 0px 30px;
   border-radius: 18px;
   background-color: rgba(255, 255, 255, 1);
-}
-
-.with-background {
-  background-color: none;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .shelf-item-content {
@@ -85,10 +77,6 @@
   vertical-align: super;
 }
 
-.without-feature .shelf-item-content {
-  margin-top: 24px;
-}
-
 .shelf-item-text {
   display: flex;
   flex-direction: column;
@@ -118,10 +106,30 @@
   font-weight: 300;
 }
 
+/* TYPES OF SHELF-ITEM */
+.with-background {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.front-shelf-item .front-shelf-item-content{
+  margin-top: 30px;
+}
+ 
+
 /* SHELF - THE LATEST */
 .the-latest .shelf-item {
   min-width: 480px;
   height: 500px;
+}
+
+.the-latest .shelf-item-content {
+  margin-top: 54px;
+}
+
+.with-feature .shelf-item-content {
+  margin-top: 30px;
 }
 
 .the-latest .shelf-item1 {
@@ -140,9 +148,12 @@
   background-image: url("../Images/macbook-pro-bg.svg");
 }
 
+/* SHELF - PERSONALIZATION */
 .personalization .front-shelf-item {
   background-image: url("../Images/gift-airpods-bg.svg");
 }
+
+
 
 
 
