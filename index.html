@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../Apple-Web-Clone/styles/ribbon.css">
   <link rel="stylesheet" href="styles/store-section.css">
   <link rel="stylesheet" href="styles/product-list.css">
+  <link rel="stylesheet" href="styles/shelf.css">
   <link rel="stylesheet" href="styles/the-latest-section.css">
 
   <!-- FONTS -->
@@ -24,6 +25,14 @@
   - git status
   - green = changed line version
   - red = previous line (unchanged)
+  
+  -->
+
+  <!-- TAKEAWAYS  -->
+   <!-- 
+  - grid - 2D
+  - flexbox - 1D
+  - grid-column-end: -2 -> means end wiil be at left side, in other words, direction will be changed.
   
   -->
 
@@ -90,74 +99,131 @@
       </section>
       <section class="product-list">
         <div class="product">
-          <img src="Images/mac.png" alt="" class="product-img">
+          <img src="Images/mac.svg" alt="" class="product-img">
           <p class="product-name">Mac</p>
         </div>
         <div class="product">
-          <img src="Images/iphone.png" alt="" class="product-img">
+          <img src="Images/iphone.svg" alt="" class="product-img">
           <p class="product-name">iPhone</p>
         </div>
         <div class="product">
-          <img src="Images/ipad.png" alt="" class="product-img">
+          <img src="Images/ipad.svg" alt="" class="product-img">
           <p class="product-name">iPad</p>
         </div>
         <div class="product">
-          <img src="Images/apple-watch.png" alt="" class="product-img">
+          <img src="Images/apple-watch.svg" alt="" class="product-img">
           <p class="product-name">Apple Watch</p>
         </div>
         <div class="product">
           <img src="Images/apple-vision-pro.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <p class="product-name">Apple Vision Pro</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/airpods.svg" alt="" class="product-img">
+          <p class="product-name">Airpods</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/airtag.svg" alt="" class="product-img">
+          <p class="product-name">AirTag</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/apple-tv-4k.svg" alt="" class="product-img">
+          <p class="product-name">Apple TV 4K</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/homepod.svg" alt="" class="product-img">
+          <p class="product-name">Homepod</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/accessories.svg" alt="" class="product-img">
+          <p class="product-name">Accessories</p>
         </div>
         <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
-        </div>
-        <div class="product">
-          <img src="Images/.svg" alt="" class="product-img">
-          <p class="product-name"></p>
+          <img src="Images/apple-gift-card.svg" alt="" class="product-img">
+          <p class="product-name">Apple Gift Card</p>
         </div>
       </section>
-      <section class="the-latest">
-        <!-- <header>
+      <section class="the-latest shelf">
+        <header class="shelf-header">
+          <span class="section-title gradient-text">The latest.</span>
+          <p class="section-title-desc">Let them unwrap wonders.</p>
+        </header>
+        <div class="shelf-items">
+          <div class="shelf-item shelf-item1">
+            <div class="shelf-item-content">
+              <div class="feature">
+                <p class="feature-text">APPLE INTELLIGENCE</p>
+                <p class="feature-superscript">∆</p>
+              </div>
+              <div class="shelf-item-text">
+                <a class="product-name bold-text">iPhone 16 Pro</a>
+                <p class="product-price">From $999 or $41.62/mo. for 24 mo.*</p>
+              </div>
+            </div>
+          </div>
+          <div class="shelf-item shelf-item2 without-feature">
+            <div class="shelf-item-content">
+              <!-- <div class="feature">
+                <p class="feature-text">APPLE INTELLIGENCE</p>
+                <p class="feature-superscript">∆</p>
+              </div> -->
+              <div class="shelf-item-text">
+                <p class="product-name bold-text">Apple Watch Series 10</p>
+                <p class="product-price">From $399 or $33.25/mo. for 12 mo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="shelf-item shelf-item3">
+            <div class="shelf-item-content">
+              <div class="feature">
+                <p class="feature-text">APPLE INTELLIGENCE</p>
+                <p class="feature-superscript">∆</p>
+              </div>
+              <div class="shelf-item-text">
+                <p class="product-name bold-text">iPad mini</p>
+                <p class="product-price">From $499 or $41.58/mo. for 12 mo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="shelf-item shelf-item4">
+            <div class="shelf-item-content">
+              <div class="feature">
+                <p class="feature-text">APPLE INTELLIGENCE</p>
+                <p class="feature-superscript">∆</p>
+              </div>
+              <div class="shelf-item-text">
+                <p class="product-name bold-text">MacBook Pro</p>
+                <p class="product-price">From $1599 or $133.25/mo. for 12 mo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="personalization shelf">
+        <header class="shelf-header">
           <span class="section-title gradient-text">Store.</span>
           <p class="section-title-desc">Gift magic this holiday.</p>
-        </header> -->
+        </header>
+        <div class="shelf-items">
+          <div class="front-shelf-item with-background shelf-item">
+            <p class="bold-text">Make their gift<br>one of a kind.</p>
+          </div>
+          <div class="narrow-shelf-item">
+            
+          </div>
+
+        </div>
+      </section>
+      <section class="holiday-picks shelf">
 
       </section>
-      <section class="personalization">
+      <section class="only-at-apple shelf">
 
       </section>
-      <section class="holiday-picks">
+      <section class="the-apple-experience shelf">
 
       </section>
-      <section class="only-at-apple">
-
-      </section>
-      <section class="the-apple-experience">
-
-      </section>
-      <section class="special-savings">
+      <section class="special-savings shelf">
 
       </section>
       <footer>

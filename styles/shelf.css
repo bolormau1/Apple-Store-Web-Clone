@@ -1,0 +1,160 @@
+.shelf {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-items: flex-start; */
+  width: 100%;
+  height: 558px;
+  gap: 24px;
+}
+
+.shelf-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  gap: 4px;
+}
+
+.shelf-items {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+/* SHELF - THE LATEST */
+.shelf-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 313px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.with-background {
+  background-color: none;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shelf-item-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: start;
+  width: 322px;
+  height: 88px;
+}
+
+.feature{
+  display: flex;
+  /* justify-content: start; */
+  /* align-items: start; */
+  width: 204px;
+  height: 24px;
+  /* position: relative; */
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: rgba(182, 68, 0, 1);
+}
+
+.feature-text {
+  width: 132px;
+  height: 14px;
+  /* position: absolute;
+  top: 1px; */
+}
+
+.feature-superscript {
+  width: 6px;
+  height: 9px;
+  /* position: absolute;
+  top: 0.41px; */
+  /* left: 134.91px; */
+  font-size: 6px;
+  vertical-align: super;
+}
+
+.without-feature .shelf-item-content {
+  margin-top: 24px;
+}
+
+.shelf-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 12px;
+}
+
+.bold-text {
+  display: flex;
+  justify-content: start;  
+  width: 322px;
+  height: 32px;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  color: rgba(29, 29, 31, 1);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+/* SHELF - THE LATEST */
+.the-latest .shelf-item {
+  min-width: 480px;
+  height: 500px;
+}
+
+.the-latest .shelf-item1 {
+  background-image: url("../Images/iphone16pro-bg.svg");
+}
+
+.the-latest .shelf-item2 {
+  background-image: url("../Images/apple-watch-series-10-bg.svg");
+}
+
+.the-latest .shelf-item3 {
+  background-image: url("../Images/ipad-mini-bg.svg");
+}
+
+.the-latest .shelf-item4 {
+  background-image: url("../Images/macbook-pro-bg.svg");
+}
+
+.personalization .front-shelf-item {
+  background-image: url("../Images/gift-airpods-bg.svg");
+}
+
+
+
+/* 
+Class Names:
+- shelf item bold text, light-text 
+- .the-latest.shelf-item
+- .feature-text
+- .feature-superscript
+- .color-list
+- .with-feature-shelf-text
+- apple-intelligence-feature
+- feature
+
+*/
