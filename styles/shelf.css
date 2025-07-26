@@ -31,11 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  min-width: 313px;
-  height: 500px;
+  min-width: 480px;
+  min-height: 500px;
   padding: 0px 30px;
   border-radius: 18px;
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
 .shelf-item-content {
@@ -68,6 +69,10 @@
   color: rgba(110, 110, 115, 1);
 }
 
+.dark-theme .gray-feature {
+  color: rgba(134, 134, 139, 1);
+}
+
 .feature-text {
   width: 132px;
   height: 14px;
@@ -96,22 +101,27 @@
 .bold-text {
   display: flex;
   justify-content: start;  
-  width: 322px;
-  height: 32px;
+  /* width: 322px; */
+  /* height: 32px; */
+  color: rgba(29, 29, 31, 1);
   font-size: 26px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 0.2px;
 }
 
-.product-price {
+.light-text {
   display: flex;
   justify-content: start;
   height: 20px;
   color: rgba(29, 29, 31, 1);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: 300;
+}
+
+.product-price {
+  font-size: 18px;
 }
 
 .with-feature .shelf-item-content {
@@ -119,26 +129,84 @@
 }
 
 
-/* TYPES OF SHELF-ITEM */
+/* --------- TYPES OF SHELF-ITEM ---------- */
+.dark-theme-shelf-item .shelf-item-content *:not(.feature) {
+  color: rgba(255, 255, 255, 1);
+}
+
 .with-background {
-  background-color: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.front-shelf-item .front-shelf-item-content{
+.medium-shelf-item {
+  min-width: 400px;
+}
+
+.medium-shelf-item .shelf-item-content{
   margin-top: 30px;
 }
- 
+
+.text-only .shelf-item-content {
+  letter-spacing: 0.2px;
+  gap: 9px;
+  margin-top: 50px;
+}
+
+.text-only .with-feature.shelf-item-content {
+  margin-top: 31px;
+}
+
+/* SHELF-ITEM - SMALL */
+.small-shelf-item {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-width: 313px;
+  height: 240px;
+}
+
+.small-shelf-item-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* column-count: auto; */
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.small-shelf-item .shelf-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 238px;
+  height: 84px;
+  margin-top: 0px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
 
 /* SHELF - THE LATEST */
+.the-latest .product-name {
+  width: 322px;
+  height: 32px;
+}
+
 .the-latest .shelf-item {
   min-width: 480px;
   height: 500px;
 }
 
 .the-latest .shelf-item-content {
-  margin-top: 54px;
+  margin-top: 30px;
+}
+
+.the-latest .product-name {
+  margin-top: 24px;
+}
+
+.the-latest .with-feature .product-name {
+  margin-top: 0px;
 }
 
 .the-latest .shelf-item1 {
@@ -158,13 +226,15 @@
 }
 
 /* SHELF - PERSONALIZATION */
-.personalization .front-shelf-item {
+.personalization .shelf-item1 {
   background-image: url("../Images/gift-airpods-bg.svg");
 }
 
+/* NARROW-SHELF-ITEM */
 .narrow-shelf-item {
   display: flex;
   flex-direction: column;
+  min-width: 313px;
   align-items: center;
   padding-top: 71px;
 }
@@ -196,14 +266,25 @@
   margin-top: 0px;
 }
 
+.narrow-shelf-item .product-name {
+  margin-top: 21px;
+}
+
+.narrow-shelf-item .with-feature .product-name {
+  margin-top: 0px;
+}
+ 
 .narrow-shelf-item-content {
+  align-content: space-between;
   justify-content: space-between;
-  /* align-content: space-between; */
   width: 257px;
   height: 109px;
 }
 
 .narrow-shelf-item .shelf-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   width: 100%;
   height: 61px;
   gap: 6px;
@@ -218,10 +299,13 @@
 }
 
 .narrow-shelf-item .bold-text {
+  display: flex;
+  align-items: start;
   width: 100%;
-  height: 20px;
+  /* height: 20px; */
   font-size: 18px;
   line-height: 20px;
+  
 }
 
 .narrow-shelf-item .product-price {
@@ -231,8 +315,96 @@
   line-height: 18px;
 }
 
+/* SHELF - HOLIDAY PICKS */
+.holiday-picks .shelf-item1 {
+  background-image: url("../Images/holiday-picks-front-bg.svg");
+}
 
+/* SHELF - ONLY AT APPLE */
+.only-at-apple .shelf-item1 {
+  background-image: url("../Images/bg-gift-bag.svg");
+}
 
+.only-at-apple .shelf-item1 .shelf-item-content {
+  width: 305px;
+  height: 130px;
+}
+
+.small-shelf-item1 .shelf-item-content {
+  width: 238px;
+  height: 84px;
+}
+
+.small-shelf-item2 .shelf-item-content {
+  width: 253px;
+  height: 82px;
+}
+
+.small-shelf-item3 .shelf-item-content {
+  width: 225.89px;
+  height: 84px;
+}
+
+.small-shelf-item4 .shelf-item-content {
+  width: 244.37px;
+  height: 112px;
+}
+
+.only-at-apple .shelf-item2 {
+  background-image: url("../Images/bg-trade-in.svg");
+}
+
+.only-at-apple .shelf-item2 .shelf-item-content {
+  width: 330.59px;
+  font-size: 25px;
+}
+
+.only-at-apple .shelf-item3 {
+  background-image: url("../Images/bg-specialist.svg");
+}
+
+.only-at-apple .shelf-item3 .shelf-item-content {
+  width: 361.36px;
+}
+
+/* SHELF - THE APPLE EXPERIENCE */
+.the-apple-experience .light-text {
+  width: 259px;
+  height: 41px;
+}
+
+.the-apple-experience .shelf-item1 {
+  background-image: url("../Images/bg-apple-music.svg");
+}
+
+.the-apple-experience .shelf-item2 {
+  background-image: url("../Images/bg-apple-tv.svg");
+}
+
+.the-apple-experience .shelf-item3 {
+  background-image: url("../Images/bg-easy-subscription.svg");
+}
+
+.the-apple-experience .shelf-item4 {
+  background-image: url("../Images/bg-new-feature.svg");
+}
+
+/* SHELF - SPECIAL SAVINGS */
+.special-savings .shelf-item1 {
+  background-image: url("../Images/bg-.svg");
+}
+
+.special-savings .shelf-item2 {
+  background-image: url("../Images/bg-.svg");
+}
+
+.special-savings .shelf-item3 {
+  background-image: url("../Images/bg-.svg");
+}
+
+.special-savings .shelf-item4 {
+  background-image: url("../Images/bg-.svg");
+}
 
 
 /* 
