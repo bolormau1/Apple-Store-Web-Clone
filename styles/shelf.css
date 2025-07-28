@@ -390,20 +390,39 @@
 }
 
 /* SHELF - SPECIAL SAVINGS */
+.special-savings .light-text {
+  width: 320.79px;
+  height: 80px;
+}
+
+.shelf-header-top {
+  display: flex;
+}
+
+.special-savings .shelf-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .special-savings .shelf-item1 {
-  background-image: url("../Images/bg-.svg");
+  background-image: url("../Images/bg-carrier-deals.svg");
 }
 
 .special-savings .shelf-item2 {
-  background-image: url("../Images/bg-.svg");
+  background-image: url("../Images/bg-education.svg");
 }
 
 .special-savings .shelf-item3 {
-  background-image: url("../Images/bg-.svg");
+  background-image: url("../Images/bg-certified-refurbished.svg");
 }
 
 .special-savings .shelf-item4 {
-  background-image: url("../Images/bg-.svg");
+  background-image: url("../Images/bg-business.svg");
+}
+
+.special-savings .shelf-item5 {
+  background-image: url("../Images/bg-government.svg");
 }
 
 
