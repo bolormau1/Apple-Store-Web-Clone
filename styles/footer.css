@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  gap: 24px;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-button {
+  display: flex;
+  gap: 8px;
+  width: auto;
+  height: auto;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(29, 29, 31, 1);
+  border-radius: 999px;
+  padding: 10px 12px;
+}
+
+.footer-button .light-text {
+  font-size: 14px;
+}
