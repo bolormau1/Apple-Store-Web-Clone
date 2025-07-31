@@ -1,24 +1,34 @@
 /* Button with gradient frame */
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: black;
 }
 
+.msg-button {
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
 .sheet {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
   min-width: 300px;
   min-height: 300px;
+  /* font-size: 50px; */
 }
 
 button {
   width: 100px;
   height: 100px;
+  font-size: 20px;
 }
 
 .button-85 {
@@ -30,7 +40,7 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -85,5 +95,5 @@ button {
   background: #222;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 30px;
 }
