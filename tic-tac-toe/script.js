@@ -15,7 +15,7 @@ function tap11() {
 function ticTacToe2(pos) {
   let o = "o";
   let x = "x";
-  let turn = 1;
+  let turn = 2;
   let sign;
   let value;
   let msg;
@@ -48,12 +48,6 @@ function ticTacToe2(pos) {
     }
   }
 
-  if (turn % 2 === 0 && turn < 5) {
-    fx();
-  } else if (turn % 2 === 0 && turn < 5) {
-    fo();
-  } else msg = "Game over!";
-
   function fx() {
     sign = "x";
 
@@ -74,4 +68,10 @@ function ticTacToe2(pos) {
 
     turn++;
   }
+
+  if (turn % 2 === 0 && turn < 5) {
+    fx();
+  } else if (turn % 2 === 0 && turn < 5) {
+    fo();
+  } else msg = "Game over!";
 }
